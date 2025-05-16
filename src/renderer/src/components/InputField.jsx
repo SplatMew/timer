@@ -1,0 +1,24 @@
+import React from 'react'
+
+export default function InputField({label, value, onChange, placeHolder} ) {
+  
+  const handleInputChange = (e)=>{
+    const inputValue = e.target.value;
+    if(/^\d+$/.test(inputValue) && inputValue <= 60){
+      onChange(e);
+    }
+  }
+
+  return (
+    <div className='text-slate-200'>
+        <label>{label}:</label>
+        <input
+          type='number'
+          value={value}
+          onChange={handleInputChange}
+          placeholder={placeHolder}
+          className='bg-transparent pl-2'
+          ></input>
+    </div>
+  )
+}
