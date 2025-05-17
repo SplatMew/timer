@@ -14,13 +14,13 @@ export default function TopBar(){
     }
 
     return(
-        <div className="rounded-t-xl overflow-hidden bg-blue-400 w-screen h-7 flex justify-between items-center">
+        <div className="rounded-t-xl overflow-hidden bg-purple-900 w-screen h-7 flex justify-between items-center">
             <div className="h-7 flex-grow"
                  style={{WebkitAppRegion:"drag"}}>
             </div>
             <div id="control-buttons" className="flex items-center h-full">
                 <button id="minimize-button" 
-                    className=" text-stone-200 px-3 h-full flex items-center justify-center hover:bg-blue-300 hover:text-black" 
+                    className=" text-stone-200 px-3 h-full flex items-center justify-center hover:bg-purple-800 hover:text-black" 
                     onClick={handleMinimize}>
                         &#128469;
                 </button>
