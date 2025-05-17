@@ -14,10 +14,11 @@ export default function InputField({label, value, onChange, placeHolder} ) {
         <label>{label}:</label>
         <input
           type='number'
+          inputMode='numeric'
           value={value}
           onChange={handleInputChange}
           placeholder={placeHolder}
-          className='bg-transparent pl-2'
+          className='bg-transparent pl-2 w-10'
           ></input>
     </div>
   )
