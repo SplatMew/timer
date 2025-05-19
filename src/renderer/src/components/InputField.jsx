@@ -4,7 +4,7 @@ export default function InputField({label, value, onChange, placeHolder} ) {
   
   const handleInputChange = (e)=>{
     const inputValue = e.target.value;
-    if(/^\d+$/.test(inputValue) && inputValue <= 60){
+    if(/^\d+$/.test(inputValue) && inputValue < 60){
       onChange(e);
     }
   }
