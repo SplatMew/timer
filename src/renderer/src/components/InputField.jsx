@@ -5,7 +5,13 @@ export default function InputField({label, value, onChange, placeHolder} ) {
   const handleInputChange = (e)=>{
     const inputValue = e.target.value;
     if(inputValue === "" || (/^\d+$/.test(inputValue) && inputValue < 60)){
-      onChange(e);
+      if(inputValue === ""){
+        e.target.value = 0;
+        onChange(e)
+      }else{
+        onChange(e)
+      }
+     
     }
   }
 
@@ -18,6 +24,7 @@ export default function InputField({label, value, onChange, placeHolder} ) {
           value={value}
           onChange={handleInputChange}
           placeholder={placeHolder}
+          maxLength={2}
           className='bg-transparent pl-2 w-10'
           ></input>
     </div>

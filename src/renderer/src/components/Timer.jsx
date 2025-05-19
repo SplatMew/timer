@@ -179,7 +179,7 @@ function handleBreak(){
                       value={hours}
                       onChange={(e) => {
                         setHours(parseInt(e.target.value))
-                        setsavedHours(e.target.value)
+                        setsavedHours(parseInt(e.target.value))
                       }}
                     ></InputField>
                     <InputField
@@ -187,7 +187,7 @@ function handleBreak(){
                       value={minutes}
                       onChange={(e) => {
                         setMinutes(parseInt(e.target.value))
-                        setSavedMinutes(e.target.value)
+                        setSavedMinutes(parseInt(e.target.value))
                       }}
                     ></InputField>
                     <InputField
@@ -195,7 +195,7 @@ function handleBreak(){
                       value={seconds}
                       onChange={(e) => {
                         setSeconds(parseInt(e.target.value))
-                        setSavedSeconds(e.target.value)
+                        setSavedSeconds(parseInt(e.target.value))
                       }}
                     ></InputField>
                     
