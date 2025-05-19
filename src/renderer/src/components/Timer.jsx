@@ -51,7 +51,7 @@ export default function Timer({ isOverlay }) {
   const handlePomodoro = () => {
     setIsPomodoro(true);
     setIsSelecting(false);
-    setMinutes(1);
+    setMinutes(25);
     setSeconds(0);
     setSavedMinutes(25);
     setSavedSeconds(0);
